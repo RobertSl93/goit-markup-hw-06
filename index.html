@@ -411,13 +411,20 @@
 						</a>
 					</div>
 				</div>
+				<form class="footer-form">
+					<label class="footer-form-label"for="footer-user-email">zapisz się do newslettera</label>
+					<div class="footer-form-container">
+					<input name="footer-email" type="email" class="footer-form-input" id="footer-user-email" placeholder="E-mail"></>
+					<button typy class="footer-sign-bnt"><span class="footer-sign-btn-text">Zapisz się</span> <svg class="footer-form-icon"><use href="images/icons.svg#icon-arrow"></use></svg></button>
+					</div>	
+				</form>
 			</div>
 		</footer>
 		<!-- BACKDROP -->
 		<div class="backdrop is-hidden" data-modal>
 			<div class="modal">
 				<h3 class="modal-title">Zostaw swoje dane w formularzu poniżej</h3>
-				<form class="backdrop-modal-form" name="modal-form">
+				<form class="backdrop-modal-form" name="modal-form" autocomplete="off">
 					<label class="form-label" for="user-name">Imie</label>
 					<div class="input-container">
 					<input class="form-input" type="text" name="name" id="user-name" />

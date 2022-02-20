@@ -648,6 +648,67 @@ ol {
 	margin-bottom: 20px;
 }
 
+.footer-form {
+	margin-top:72px;
+	margin-left: 78px;
+}
+
+.footer-form-label {
+	display: block;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 1.143;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: #ffffff;
+	margin-bottom: 20px;
+}
+
+.footer-form-container {
+	display: flex;
+}
+
+.footer-form-input {
+	margin-right: 12px;
+	width: 358px;
+	min-height: 50px;
+	padding: 16px 0 16px 15px;
+	background-color: transparent;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	box-sizing: border-box;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	border-radius: 4px;
+	outline: none;
+}
+
+.footer-sign-bnt {
+	width: 200px;
+	height: 50px;
+	background: #2196f3;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	cursor: pointer;
+}
+
+.footer-sign-btn-text {
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 1.875;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.06em;
+	color: #ffffff;
+}
+
+.footer-form-icon {
+	width: 24px;
+	height: 24px;
+}
 /* ========FOOTER END======= */
 
 /* ========BACKDROP======= */
@@ -694,11 +755,11 @@ ol {
 	height: 18px;
 }
 
-/* .is-hidden {
+.is-hidden {
 	opacity: 0;
 	visibility: hidden;
 	pointer-events: none;
-} */
+}
 
 .modal-title {
 	font-weight: bold;
@@ -732,6 +793,7 @@ ol {
 }
 
 .form-input {
+	outline: 0;
 	padding-left: 35px;
 	width: 100%;
 	margin-bottom: 10px;
@@ -740,7 +802,17 @@ ol {
 	border-radius: 4px;
 }
 
+.form-input:focus,
+.form-textarea:focus {
+	border: 1px solid var(--checked-color);
+}
+
+.form-input:focus + .input-icon {
+	color: var(--checked-color);
+}
+
 .input-icon {
+	fill: currentColor;
 	position: absolute;
 	top: 10px;
 	left: 12px;
@@ -749,12 +821,20 @@ ol {
 }
 
 .form-textarea {
+	outline: 0;
 	min-height: 120px;
 	margin-bottom: 10px;
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
 	padding: 16px;
 	margin-bottom: 20px;
+}
+
+.form-textarea::placeholder {
+	font-size: 12px;
+	line-height: 1.1667;
+	letter-spacing: 0.01em;
+	color: rgba(117, 117, 117, 0.5);
 }
 
 .modal-form-policy-text {
