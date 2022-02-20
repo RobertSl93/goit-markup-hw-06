@@ -28,7 +28,9 @@
 				<nav class="navigation">
 					<ul class="navigation-list">
 						<li class="navigation-list-item">
-							<a href="index.html" class="navigation-list-link agency-active">Agencja</a>
+							<a href="index.html" class="navigation-list-link agency-active"
+								>Agencja</a
+							>
 						</li>
 						<li class="navigation-list-item">
 							<a href="portfolio.html" class="navigation-list-link"
@@ -414,6 +416,37 @@
 		<!-- BACKDROP -->
 		<div class="backdrop is-hidden" data-modal>
 			<div class="modal">
+				<h3 class="modal-title">Zostaw swoje dane w formularzu poniżej</h3>
+				<form class="backdrop-modal-form" name="modal-form">
+					<label class="form-label" for="user-name">Imie</label>
+					<div class="input-container">
+					<input class="form-input" type="text" name="name" id="user-name" />
+					<svg class="input-icon"><use href="images/icons.svg#icon-person"></use></svg>
+					</div>
+					<label class="form-label" for="user-phone-number">Telefon</label>
+					<div class="input-container">
+					<input
+						class="form-input"
+						type="tel"
+						name="phone-number"
+						id="user-phone-number"
+					/>
+					<svg class="input-icon"><use href="images/icons.svg#icon-phone"></use></svg>
+					</div>
+					<label class="form-label" for="user-email">Email</label>
+					<div class="input-container">
+					<input class="form-input" type="email" name="email" id="user-eamil" />
+					<svg class="input-icon"><use href="images/icons.svg#icon-email"></use></svg>
+					</div>
+					<label class="form-label" for="user-comment">Komentarz</label>
+					<textarea class="form-textarea" name="comment" id="user-comment" placeholder="Wprowadź tekst"></textarea>
+					<input class="modal-form-policy visually-hidden" type="checkbox" name="policy" id="user-policy" />
+					<label class="modal-form-policy-text" for="user-policy"
+						>Oświadczam iż akceptuję <a href="#">Regulamin</a> i
+						<a href="#">Politykę Prywatności.</a></label
+					>
+					<button class="modal-send-btn" type="submit">Wyślij</button>
+				</form>
 				<button type="button" class="close-btn" data-modal-close>
 					<svg class="close-icon">
 						<use href="./images/icons.svg#icon-close"></use>

@@ -207,20 +207,20 @@ ol {
 }
 
 .portfolio-active,
-.agency-active{
+.agency-active {
 	position: relative;
 	color: var(--checked-color);
 }
 
-.portfolio-active::after, 
-.agency-active::after{
+.portfolio-active::after,
+.agency-active::after {
 	position: absolute;
 	top: 45px;
 	content: "";
 	display: block;
-	background-color:#2196F3;
-	width:100%;
-	height:4px;
+	background-color: #2196f3;
+	width: 100%;
+	height: 4px;
 	border-radius: 2px;
 }
 
@@ -275,7 +275,6 @@ ol {
 	list-style: none;
 }
 
-
 .main-list-item {
 	background: var(--card-color);
 	border: 1px solid #eeeeee;
@@ -285,8 +284,8 @@ ol {
 	cursor: pointer;
 }
 
-.main-list-link{
-	height:294px;
+.main-list-link {
+	height: 294px;
 	width: 100%;
 	position: relative;
 	display: block;
@@ -295,20 +294,20 @@ ol {
 
 .main-list-link::after {
 	position: absolute;
-	top:0;
-	left:0;
+	top: 0;
+	left: 0;
 	content: "Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji";
 	display: block;
 	padding: 49px 24px 49px 45px;
-	background-color:rgba(33, 150, 243, 0.9);
-	color: #FFFFFF;
+	background-color: rgba(33, 150, 243, 0.9);
+	color: #ffffff;
 	font-size: 18px;
 	line-height: 1.556;
 	letter-spacing: 0.03em;
 	width: 100%;
 	min-height: 294px;
-	transform:translateY(100%);
-	transition: transform  250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transform: translateY(100%);
+	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-list-item:hover {
@@ -316,10 +315,9 @@ ol {
 		1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.main-list-item:hover .main-list-link::after{
-	transform:translateY(0);
+.main-list-item:hover .main-list-link::after {
+	transform: translateY(0);
 }
-
 
 .main-list-item-text {
 	padding: 20px 24px;
@@ -452,29 +450,29 @@ ol {
 	margin-right: 30px;
 }
 
-.what-we-do-list-item{
+.what-we-do-list-item {
 	position: relative;
 }
 
-.what-we-do-list-element{
-	position:absolute;
-	bottom:0;
+.what-we-do-list-element {
+	position: absolute;
+	bottom: 0;
 	left: 0;
 	width: 100%;
-	min-height:70px;
-	background-color: rgba(47, 48, 58, 0.8);;
+	min-height: 70px;
+	background-color: rgba(47, 48, 58, 0.8);
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.what-we-do-list-element-title{
+.what-we-do-list-element-title {
 	font-weight: bold;
 	font-size: 14px;
 	line-height: 1.143px;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
-	color: #FFFFFF;
+	color: #ffffff;
 }
 
 /* ========WHAT WE DO END======= */
@@ -696,10 +694,122 @@ ol {
 	height: 18px;
 }
 
-.is-hidden {
+/* .is-hidden {
 	opacity: 0;
 	visibility: hidden;
 	pointer-events: none;
+} */
+
+.modal-title {
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 1.15;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: var(--main-color);
+	margin-top: 40px;
+	margin-bottom: 12px;
 }
 
+.backdrop-modal-form {
+	width: 458px;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+}
+
+.form-label {
+	margin-bottom: 4px;
+	font-size: 12px;
+	line-height: 1.167;
+	letter-spacing: 0.01em;
+	color: var(--secondary-color);
+}
+
+.input-container {
+	position: relative;
+	width: 100%;
+}
+
+.form-input {
+	padding-left: 35px;
+	width: 100%;
+	margin-bottom: 10px;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	min-height: 40px;
+	border-radius: 4px;
+}
+
+.input-icon {
+	position: absolute;
+	top: 10px;
+	left: 12px;
+	width: 18px;
+	height: 18px;
+}
+
+.form-textarea {
+	min-height: 120px;
+	margin-bottom: 10px;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+	padding: 16px;
+	margin-bottom: 20px;
+}
+
+.modal-form-policy-text {
+	position: relative;
+	width: 395px;
+	font-size: 14px;
+	line-height: 1.714;
+	letter-spacing: 0.03em;
+	color: var(--secondary-color);
+	margin: 0 auto 30px;
+}
+
+.modal-form-policy-text::before {
+	position: absolute;
+	top: 3px;
+	left: -20px;
+	content: "";
+	width: 16px;
+	height: 16px;
+	border: 1px solid #212121;
+}
+
+.modal-form-policy:checked + .modal-form-policy-text:before {
+	background-color: var(--checked-color);
+	border: none;
+	background-image: url(../images/Vector.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.modal-send-btn {
+	margin: 0 auto;
+	width: 200px;
+	height: 50px;
+	background-color: #2196f3;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 1.875;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.06em;
+	color: #ffffff;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	border: none;
+	cursor: pointer;
+}
+
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
 /* ========BACKDROP END======= */
