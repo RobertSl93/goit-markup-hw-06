@@ -414,7 +414,7 @@
 				<form class="footer-form">
 					<label class="footer-form-label"for="footer-user-email">zapisz się do newslettera</label>
 					<div class="footer-form-container">
-					<input name="footer-email" type="email" class="footer-form-input" id="footer-user-email" placeholder="E-mail"></>
+					<input name="footer-email" type="email" class="footer-form-input" id="footer-user-email" placeholder="E-mail" required></>
 					<button typy class="footer-sign-bnt"><span class="footer-sign-btn-text">Zapisz się</span> <svg class="footer-form-icon"><use href="images/icons.svg#icon-arrow"></use></svg></button>
 					</div>	
 				</form>
@@ -427,7 +427,7 @@
 				<form class="backdrop-modal-form" name="modal-form" autocomplete="off">
 					<label class="form-label" for="user-name">Imie</label>
 					<div class="input-container">
-					<input class="form-input" type="text" name="name" id="user-name" />
+					<input class="form-input" type="text" name="name" id="user-name" required/>
 					<svg class="input-icon"><use href="images/icons.svg#icon-person"></use></svg>
 					</div>
 					<label class="form-label" for="user-phone-number">Telefon</label>
@@ -437,17 +437,18 @@
 						type="tel"
 						name="phone-number"
 						id="user-phone-number"
+						required
 					/>
 					<svg class="input-icon"><use href="images/icons.svg#icon-phone"></use></svg>
 					</div>
 					<label class="form-label" for="user-email">Email</label>
 					<div class="input-container">
-					<input class="form-input" type="email" name="email" id="user-eamil" />
+					<input class="form-input" type="email" name="email" id="user-eamil" required/>
 					<svg class="input-icon"><use href="images/icons.svg#icon-email"></use></svg>
 					</div>
 					<label class="form-label" for="user-comment">Komentarz</label>
 					<textarea class="form-textarea" name="comment" id="user-comment" placeholder="Wprowadź tekst"></textarea>
-					<input class="modal-form-policy visually-hidden" type="checkbox" name="policy" id="user-policy" />
+					<input class="modal-form-policy visually-hidden" type="checkbox" name="policy" id="user-policy"/>
 					<label class="modal-form-policy-text" for="user-policy"
 						>Oświadczam iż akceptuję <a href="#">Regulamin</a> i
 						<a href="#">Politykę Prywatności.</a></label
